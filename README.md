@@ -10,6 +10,7 @@ CoachGPT currently runs entirely through the ChatGPT UI, with a private backend 
 
 # What CoachGPT Can Do
 Examples of questions CoachGPT is designed to answer:
+> 
 	•	“How’s my training today compared to my recent baseline?”
 	•	“Why did my running performance drop this week?”
 	•	“How did yesterday’s cycling session go?”
@@ -19,16 +20,27 @@ Examples of questions CoachGPT is designed to answer:
 CoachGPT determines what data to fetch automatically and explains results in plain language.
 
 # High-level Architecture
+
 Apple Health
-   ↓
+
+↓
+
 Health Auto Export (iOS)
-   ↓
+
+↓
+
 Supabase Edge Function (ingest)
-   ↓
+
+↓
+
 Postgres (workouts + samples)
-   ↓
+
+↓
+
 Supabase Edge Function (read-only API)
-   ↓
+
+↓
+
 ChatGPT Custom GPT (Actions)
 
 Key Design Principles
